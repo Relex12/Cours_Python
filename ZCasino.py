@@ -35,4 +35,5 @@ while continu:
         print ("Vous avez perdu votre mise")
 
     print ("Vous avez encore ", som_tot, "$")
-## il reste à faire la sortie de boucle sur continu
+
+    continu = ("q" != input("Voulez-vous continuer ? (tapez q pour quitter)       "))

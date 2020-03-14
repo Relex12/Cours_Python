@@ -37,3 +37,7 @@ while continu:
     print ("Vous avez encore ", som_tot, "$")
 
     continu = ("q" != input("Voulez-vous continuer ? (tapez q pour quitter)       "))
+
+    if som_tot <= O:
+        continu = False
+        # faudrait mettre un message de défaite quand même

@@ -1,4 +1,5 @@
 from math import fabs
+from sys import argv
 
 def papillon (n):
 	"""Réalise un papillon avec des étoiles"""
@@ -21,7 +22,11 @@ def papillon (n):
 
 if __name__ == '__main__':
 	i = 1
-	while i < 105:
+	if len(argv) == 1:
+		nb = 5
+	else:
+		nb = int(argv[1])
+	while i < nb:
 		papillon (i)
 		i+=1
 	while i > 0:
